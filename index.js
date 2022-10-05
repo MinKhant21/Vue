@@ -8,10 +8,18 @@ const app = Vue.createApp({
         }
     },
     methods:{
-       hide()
-       {
-        !ShowBook
-       }
+        mouseoverhandler()
+        {
+            console.log('mouse Over')
+        },
+        mouseleavehandler()
+        {
+            console.log('mouse leave')
+        },
+        dblclickhandler()
+        {
+            console.log('Dbl Click')
+        }
     }
 });
 

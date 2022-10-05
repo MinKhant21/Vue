@@ -11,16 +11,22 @@
     <h1>Learning Vue 3</h1>
     <div id="app">
         <div v-if="ShowBook">
+           
             <p>{{ title }}</p>
-            <p> {{ author }}</p>
-            <p> {{ age }}</p>
+            <p> {{author }}</p>
+            <p> {{ge }}</p>
 
+         
         </div>
         <button @:click="ShowBook=!ShowBook">
             <span v-if="ShowBook">Hide</span>
             <span v-if="ShowBook===false">Show</span>
         </button>
         
+        <div @:mouseover="mouseoverhandler">Mouse Over</div>
+        <div @:mouseleave="mouseleavehandler">Mouse Leave</div>
+        <div @:dblclick="dblclickhandler">Dbl Click</div>
+
     </div>
       
       
