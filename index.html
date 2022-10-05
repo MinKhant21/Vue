@@ -10,11 +10,20 @@
 <body>
     <h1>Learning Vue 3</h1>
     <div id="app">
-        <p>{{ title }}</p>
-        <p> {{ author }}</p>
-        <p> {{ age }}</p>
-        <button v-on:click="IncreaseAge">Toggle Click</button>
+        <div v-if="ShowBook">
+            <p>{{ title }}</p>
+            <p> {{ author }}</p>
+            <p> {{ age }}</p>
+
+        </div>
+        <button @:click="ShowBook=!ShowBook">
+            <span v-if="ShowBook">Hide</span>
+            <span v-if="ShowBook===false">Show</span>
+        </button>
+        
     </div>
+      
+      
     <script src="index.js"></script>
 </body>
 </html>

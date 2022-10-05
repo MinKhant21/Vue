@@ -3,14 +3,15 @@ const app = Vue.createApp({
         return {
             title : "vue 3 start",
             author : "Kaung Min Khant",
-            age : 20
+            age : 20,
+            ShowBook:true
         }
     },
     methods:{
-        IncreaseAge()
-        {
-            this.age++
-        }
+       hide()
+       {
+        !ShowBook
+       }
     }
 });
 
